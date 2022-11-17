@@ -1,0 +1,64 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "eslint:recommended", 
+    "plugin:react/recommended", 
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "react/function-component-definition": 0,
+    "camelcase": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": 0,
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unstable-nested-components": 0,
+    "no-param-reassign": 0,
+    "react-hooks/rules-of-hooks": 0,
+    "import/no-import-module-exports": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        [
+          "@components",
+          "./src/components"
+        ],[
+          "@hooks",
+          "./src/hooks"
+        ],[
+          "@utils",
+          "./src/utils"
+        ],[
+          "@pages",
+          "./src/pages"
+        ],[
+          "@assets",
+          "./src/assets"
+        ]
+      ],
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  }
+}
