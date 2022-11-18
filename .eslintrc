@@ -27,7 +27,13 @@
     "react/no-unstable-nested-components": 0,
     "no-param-reassign": 0,
     "react-hooks/rules-of-hooks": 0,
-    "import/no-import-module-exports": 0
+    "import/no-import-module-exports": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
   "env": {
     "browser": true,
